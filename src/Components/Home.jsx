@@ -10,19 +10,19 @@ const Home = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30px" height="30px">
                             <path d="M21 8h-8l4-6h-6L3 14h7l-6 9L21 8Z"></path>
                         </svg>
-                    <p>Explore my notes section see notes of various topics</p>
+                        <p>Explore my notes section see notes of various topics</p>
                     </div>
                     <div className="flex flex-row gap-4">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30px" height="30px">
                             <path d="M21 8h-8l4-6h-6L3 14h7l-6 9L21 8Z"></path>
                         </svg>
-                    <p>Check out on my projects</p>
+                        <p>Check out on my projects</p>
                     </div>
                     <div className="flex flex-row gap-4">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30px" height="30px">
                             <path d="M21 8h-8l4-6h-6L3 14h7l-6 9L21 8Z"></path>
                         </svg>
-                    <p>Connect with me me social media</p>
+                        <p>Connect with me me social media</p>
                     </div>
                 </div>
                 <div className="w-[40%] h-full flex flex-col justify-center">
@@ -33,6 +33,7 @@ const Home = () => {
                     <div className="w-[50%] h-[1px] bg-black  my-3"></div>
                     <p>I'm a passionate Software development and Web development. I love listening Songs, and I'm always eager to learn new things.</p>
                 </div>
+
             </div>
         </div>
     )

@@ -10,6 +10,8 @@ import NotesHtml from "./Components/Notes/NotesHtml";
 import Project from "./Components/Project/Project";
 import ImportantLinks from "./Components/ImportantLinks/ImportantLinks";
 import Github from "./Components/Github";
+import Creator from "./Components/Creator";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
 
@@ -23,9 +25,11 @@ const App = () => {
         <Route path="/project" element={<Project/>} />
         <Route path="/important-links" element={<ImportantLinks/>}/>
         <Route path="/github" element={<Github/>}/>
+        <Route path="/creator" element={<Creator/>}/>
 
         <Route path="/notes/html" element={<NotesHtml/>} />
       </Routes>
+      <Toaster/>
     </div>
   );
 };
