@@ -47,7 +47,7 @@ const Navbar = () => {
                 {
                     login ?
                         <div className="flex flex-row gap-8">
-                            <NavLink to="/creator" className="hover:text-[#a7adfe]" onClick={loginHandler}>Dashboard</NavLink>
+                            <NavLink to="/creator" className="hover:text-[#a7adfe]">Dashboard</NavLink>
                             <NavLink to="/" className="hover:text-[#a7adfe]" onClick={loginHandler}>Logout</NavLink>
                         </div>
                         :
