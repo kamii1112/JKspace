@@ -28,7 +28,17 @@ export default function AppContextProvider({children}){
             setLogin(false);
             toast.success("Logout Successfully");
         }
+        else{
+            toast.success("what a f??");
+        }
     }
+
+    const handleCopyClick = (event) => {
+        const command = event.target.textContent.trim();
+        navigator.clipboard.writeText(command);
+        toast.success("text copied");
+        console.log("copied");
+    };
 
     const value = {
         loginUsername,
@@ -38,6 +48,7 @@ export default function AppContextProvider({children}){
         showPassword, setShowPassword,
         login, setLogin,
         submitHandler, loginHandler,
+        handleCopyClick,
     }
 
 

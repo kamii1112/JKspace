@@ -21,15 +21,39 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/notes" element={<Notes/>} />
-        <Route path="/project" element={<Project/>} />
-        <Route path="/important-links" element={<ImportantLinks/>}/>
-        <Route path="/github" element={<Github/>}/>
-        <Route path="/creator" element={<Creator/>}/>
+        <Route path="/notes" element={<Notes />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/important-links" element={<ImportantLinks />} />
+        <Route path="/github" element={<Github />} />
+        <Route path="/creator" element={<Creator />} />
 
-        <Route path="/notes/html" element={<NotesHtml/>} />
+        <Route path="/notes/html" element={<NotesHtml />} />
       </Routes>
-      <Toaster/>
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+        gutter={8}
+        containerClassName=""
+        containerStyle={{}}
+        toastOptions={{
+          // Define default options
+          className: '',
+          duration: 1000,
+          style: {
+            background: '#a7adfe',
+            color: '#fff',
+          },
+
+          // Default options for specific types
+          success: {
+            duration: 1000,
+            theme: {
+              primary: 'green',
+              secondary: 'black',
+            },
+          },
+        }}
+      />
     </div>
   );
 };
