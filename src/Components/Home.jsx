@@ -99,8 +99,11 @@ const Home = () => {
                     <p className="cursor-pointer" onClick={handleCopyClick}>komalkumar0412@gmail.com</p>
                    
                     <div className="w-[50%] flex flex-row gap-4 mx-auto justify-center">
-                        <a href=""><SocialIcon network="linkedin" className="hover:cursor-pointer" /> </a>
-                        <a href=""><SocialIcon network="github" className="hover:cursor-pointer" /> </a>
+                        <a href="https://www.linkedin.com/in/jella-komal-kumar/">
+                            <SocialIcon network="linkedin" className="hover:cursor-pointer" /> 
+                            </a>
+                        <a href="https://github.com/JellaKomal/">
+                            <SocialIcon network="github" className="hover:cursor-pointer" /> </a>
                     </div>
                 </div>
             </div>

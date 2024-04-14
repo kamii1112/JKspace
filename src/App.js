@@ -2,8 +2,6 @@ import "./App.css";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import Link1 from "./Components/Link1";
-import Link2 from "./Components/Link2";
 import Home from "./Components/Home";
 import Notes from "./Components/Notes/Notes";
 import NotesHtml from "./Components/Notes/NotesHtml";
