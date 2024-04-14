@@ -9,15 +9,18 @@ const Notes = () => {
 
     const { login } = useContext(AppContext);
 
-    return <div>
+    return <div className="w-full pt-28">
 
         {
             login ? (
-                <div>{
-                    NotesData.map((data) => (
-                        <NotesCard data={data} />
-                    ))
-                }
+                <div className="flex flex-col gap-5">
+                    <h1 className="mx-auto text-5xl font-semibold tracking-wider text-slate-300 hover:text-[#a7adfe] cursor-pointer">Notes</h1>
+                    <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-10 w-[70%] mx-auto">{
+                        NotesData.map((data) => (
+                            <NotesCard data={data} />
+                        ))
+                    }
+                    </div>
                 </div>
             ) :
                 (

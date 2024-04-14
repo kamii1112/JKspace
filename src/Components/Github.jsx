@@ -11,10 +11,10 @@ const Github = () => {
 
     return (
         <div className="w-full">
-            <div className="w-[80%] mx-auto p-40 flex flex-col gap-1 h-[100vh] ">
+            <div className="w-[80%] mx-auto p-40 flex flex-col gap-1 lg:h-[100vh] sm:w-full sm:p-10 sm:mt-52 md:mt- lg:mt-20">
 
 
-                <h1 className="text-xl font-semibold">This starter pack includes a basic setup for using Tailwind CSS with React. <br /> To start building your own components and styles, follow these steps:</h1>
+                <h1 className="text-xl font-semibold sm:text-center">This starter pack includes a basic setup for using Tailwind CSS with React. <br /> To start building your own components and styles, follow these steps:</h1>
                 <br />
                 <p>1. Clone the repository to your local machine.</p>
                 <code onClick={handleCopyClick} className="bg-slate-100 p-1 cursor-pointer pl-5 rounded-md  text-red-600">
@@ -37,8 +37,11 @@ const Github = () => {
                 <p>Open the project in your browser to view your project</p>
                 <code onClick={handleCopyClick} className="bg-slate-100 p-1 cursor-pointer pl-5  text-red-600">https://localhost:3000</code>
             </div>
-            <div className=" px-20 py-40 w-[80%] mx-auto flex flex-col gap-1 h-[100vh]">
-                <h1 className="text-xl font-semibold">Basic Commands of Github</h1>
+            <div className="xl:hidden lg:hidden md:block sm:block w-[40%] h-[1px] bg-slate-300 mx-auto">
+
+            </div>
+            <div className=" px-20 pt-40 w-[80%] mx-auto flex flex-col gap-1 lg:h-[90vh] sm:w-full sm:p-10 ">
+                <h1 className="text-xl font-semibold sm:text-center">Basic Commands of Github</h1>
                 <br />
                 <p>1. Initialize a new Git repository locally</p>
                 <code onClick={handleCopyClick} className="bg-slate-100 p-1 cursor-pointer pl-5 rounded-md  text-red-600">
