@@ -1,5 +1,11 @@
 const ProjectData = [
     {
+            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW5iNPeKmy_C2Jh9PVjS_6Wc39UwI2-Bx8dg&s',
+            title: "Recipe Generator",
+            link: "https://recipe-generator-two.vercel.app/",
+            description: "Elevate your cooking game with our Recipe Generator! Harnessing the power of APIs and React, it effortlessly curates mouthwatering recipes tailored to your tastes."
+        },
+    {
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVvcncEepkaHlQEqy9EZ3x-WjDttEWfcVH0LgmMThbKg&s',
         title: "Password Generator",
         link: "https://www.youtube.com/",
@@ -41,31 +47,6 @@ const ProjectData = [
     //     link: "",
     //     description: ""
     // },
-    // {
-    //     image: '',
-    //     title: "",
-    //     link: "",
-    //     description: ""
-    // },
-    // {
-    //     image: '',
-    //     title: "",
-    //     link: "",
-    //     description: ""
-    // },
-    // {
-    //     image: '',
-    //     title: "",
-    //     link: "",
-    //     description: ""
-    // },
-    // {
-    //     image: '',
-    //     title: "",
-    //     link: "",
-    //     description: ""
-    // },
-
 ];
 
 export default ProjectData;

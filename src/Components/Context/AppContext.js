@@ -11,6 +11,7 @@ export default function AppContextProvider({children}){
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(true);
     const [login, setLogin] = useState(false);
+    // const [login, setLogin] = useState(true); for testing purpose
 
     const submitHandler = () => {
         if (username === loginUsername && password === loginPassword) {

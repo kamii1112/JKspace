@@ -19,26 +19,29 @@ const Navbar = () => {
 
     return (
 
-        <div className="w-[100vw] lg:h-[80px] lg:px-20 sm:px-20 md:p-4 flex lg:flex-row sm:flex-col justify-between border border-slate  bg-white opacity-90 fixed top-0">
-            <div className="block">
+        <div className="w-[100vw] lg:h-[80px] lg:px-20 p-4
+        bg-orange-200 sm:bg-slate-200 md:bg-red-200 lg:bg-blue-200
+         border-slate flex lg:flex-row flex-col md:flex-row
+        opacity-90 md:fixed md:top-0 lg:fixed lg:top-0 items-center">
+            <div className="">
                 <NavLink to="/">
-
                     <img src={logo} alt="" className="w-[50px] h-[50px] my-auto sm:mx-auto" />
                 </NavLink>
             </div>
-            <div className="p-2 flex lg:flex-row md:flex-row sm:flex-col sm:mx-auto  lg:gap-8 md:gap-2 sm:gap-2 my-auto ">
-                <NavLink to="/" className="hover:text-[#a7adfe] sm:mx-auto">Home</NavLink>
+            <div className="p-2 flex lg:flex-row md:flex-row flex-col mx-auto lg:gap-8 md:gap-8 gap-2 items-center ">
+                <NavLink to="/" className="hover:text-[#a7adfe]">Home</NavLink>
                 {
                     login && <div className="group">
-                        <div className="flex flex-row gap-8 sm:justify-center">
-                            <NavLink to="/notes" className="cursor-pointer  duration-300 ease-in-out transition-all px-3 group-hover:text-[#a7adfe]">Notes</NavLink>
+                        <div className="flex md:flex-row lg:flex-row flex-col md:gap-8 lg:gap-8 gap-1 items-center">
+                            <NavLink to="/notes" className="cursor-pointer  duration-300 ease-in-out transition-all 
+                            px-3 group-hover:text-[#a7adfe]">Notes</NavLink>
                             <NavLink to='/important-links' className="hover:text-[#a7adfe] sm:mx-auto">Important Links</NavLink>
                             <NavLink to="/github" className="hover:text-[#a7adfe] sm:mx-auto">Github</NavLink>
                         </div>
                     </div>
 
                 }
-                <NavLink to='/project' className="hover:text-[#a7adfe] sm:mx-auto">Project</NavLink>
+                <NavLink to='/project' className="hover:text-[#a7adfe] ">Project</NavLink>
 
 
 
@@ -46,13 +49,15 @@ const Navbar = () => {
             <div className="my-auto">
                 {
                     login ?
-                        <div className="flex lg:flex-row lg:gap-8 sm:gap-2 md:gap-2 md:flex-row sm:flex-col">
+                        <div className="flex lg:flex-row lg:gap-8 items-center gap-2 md:gap-2 md:flex-row flex-col">
                             <NavLink to="/creator" className="hover:text-[#a7adfe] sm:mx-auto">Dashboard</NavLink>
                             <NavLink to="/" className="hover:text-[#a7adfe] sm:mx-auto" onClick={loginHandler}>Logout</NavLink>
                         </div>
                         :
-                        <div className="group">
-                            <NavLink to="/creator" className="duration-200 transition-all sm:mx-auto  hover:text-[#a7adfe]">Creator Login</NavLink>
+                        <div className="group ">
+                            <NavLink to="/creator" className="duration-200  transition-all sm:mx-auto  hover:text-[#a7adfe]">
+
+                            </NavLink>
                             <div className="w-[70%] h-[2px] rounded-md opacity-0 group-hover:opacity-95 bg-[#a7adfe] mx-auto mt-1 ">
                             </div>
                         </div>

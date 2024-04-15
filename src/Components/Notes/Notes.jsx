@@ -9,13 +9,13 @@ const Notes = () => {
 
     const { login } = useContext(AppContext);
 
-    return <div className="w-full pt-28">
+    return <div className="w-full md:pt-28 lg:pt-28 pt-5">
 
         {
             login ? (
-                <div className="flex flex-col gap-5">
+                <div className="flex flex-col gap-10 mt-10">
                     <h1 className="mx-auto text-5xl font-semibold tracking-wider text-slate-300 hover:text-[#a7adfe] cursor-pointer">Notes</h1>
-                    <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-10 w-[70%] mx-auto">{
+                    <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-12 w-[70%] mx-auto">{
                         NotesData.map((data) => (
                             <NotesCard data={data} />
                         ))

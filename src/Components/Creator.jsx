@@ -23,19 +23,25 @@ const Creator = () => {
 
                     </div>)
                     :
-                    <div className="w-full h-[100vh] p-28 flex lg:flex-row md:flew-row sm:flex-col justify-evenly ">
-                        <div className="flex flex-col justify-center w-[50%] sm:w-full sm:mt-52 lg:my-auto">
-                            <h1 className="text-xl font-semibold sm:text-center md:text-left lg:text-left">Welcome to Creator Login!</h1>
-                            <p className="text-xl my-2">Features</p>
-                            <p><span className="font-bold mb-1">Access to Premium Content:</span> Get access to premium notes and resoures.</p>
-                            <p><span className="font-bold mb-1">Personalized Dashboard:</span> Customize your current working projects</p>
-                            <p> <span className="font-bold mb-1">Stay Updated:</span> Receive regular updates on new features</p>
-                            <h1 className="text-3xl mt-4 font-bold text-[#a7adfe] sm:text-center md:text-left lg:text-left">Ready to Get Started?</h1>
-                            <h1 className="text-xl mt-5 sm:text-center md:text-left lg:text-left">Login now and start exploring all the possiblities as creator!</h1>
+                    <div className="w-full h-[100vh] md:p-28 p-5 flex flex-col md:flex-row justify-center">
+                        <div className="flex flex-col justify-center md:w-[45%] lg:w-[70%] w-[100%] mt-52 lg:my-auto">
+                            <h1 className="text-xl font-semibold text-center md:text-left lg:text-left">Welcome to Creator Login!</h1>
+                            <p className="md:text-xl lg:text-xl text-sm lg:my-2 md:my-2 my-1  text-center md:text-left lg:text-left">Features</p>
+                            <p className="md:text-xl lg:text-xl text-sm text-center md:text-left lg:text-left">
+                                <span className="font-bold mb-1">Access to Premium Content:</span> Get access to premium notes and resoures.</p>
+                            <p className="md:text-xl lg:text-xl text-sm text-center md:text-left lg:text-left">
+                                <span className="font-bold mb-1">Personalized Dashboard:</span> Customize your current working projects</p>
+                            <p className="md:text-xl lg:text-xl text-sm text-center md:text-left lg:text-left">
+
+                                <span className="font-bold mb-1">Stay Updated:</span> Receive regular updates on new features</p>
+                            <h1 className="text-3xl mt-4 font-bold text-[#a7adfe] text-center md:text-left lg:text-left">Ready to Get Started?</h1>
+                            <h1 className="md:text-xl lg:text-xl text-base lg:mt-5 md:mt-5 mt-2 text-center md:text-left lg:text-left">Login now and start exploring all the possiblities as creator!</h1>
                         </div >
                         <div className="xl:hidden lg:hidden md:hidden sm:block w-[40%] h-[1px] bg-slate-300 mx-auto">
                         </div>
-                        <div className="flex flex-col items-center lg:my-auto lg:px-5 lg:py-40 shadow-xl lg:w-[50%] rounded-xl py-20 sm:w-full sm:mt-20 sm:py-16 md:w-[70%] md:mx-auto sm:mx-auto">
+                        <div className="flex flex-col gap-4 items-center lg:my-auto lg:px-1 lg:py-20 shadow-xl hover:shadow-2xl
+                        rounded-xl mt-20 py-16 md:w-[50%] mx-auto w-[70%] lg:w-[40%] ">
+                            <h1 className="text-lg font-semibold tracking-wider">Login Now!</h1>
                             <div className="">
                                 <label htmlFor="username" className="my-auto">Username<super className="text-red-500">*</super></label>
                                 <input type="text" placeholder="username" value={username}
