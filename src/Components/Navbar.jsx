@@ -37,6 +37,7 @@ const Navbar = () => {
                             px-3 group-hover:text-[#a7adfe]">Notes</NavLink>
                             <NavLink to='/important-links' className="hover:text-[#a7adfe] sm:mx-auto">Important Links</NavLink>
                             <NavLink to="/github" className="hover:text-[#a7adfe] sm:mx-auto">Github</NavLink>
+                            <NavLink to="/open-links" className="hover:text-[#a7adfe] sm:mx-auto">OpenLinks</NavLink>
                         </div>
                     </div>
 
@@ -56,7 +57,7 @@ const Navbar = () => {
                         :
                         <div className="group ">
                             <NavLink to="/creator" className="duration-200  transition-all sm:mx-auto  hover:text-[#a7adfe]">
-
+CLogin
                             </NavLink>
                             <div className="w-[70%] h-[2px] rounded-md opacity-0 group-hover:opacity-95 bg-[#a7adfe] mx-auto mt-1 ">
                             </div>
