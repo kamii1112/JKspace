@@ -38,6 +38,7 @@ const Navbar = () => {
                             <NavLink to='/important-links' className="hover:text-[#a7adfe] sm:mx-auto">Important Links</NavLink>
                             <NavLink to="/github" className="hover:text-[#a7adfe] sm:mx-auto">Github</NavLink>
                             <NavLink to="/open-links" className="hover:text-[#a7adfe] sm:mx-auto">OpenLinks</NavLink>
+                            <NavLink to="/svg-links" className="hover:text-[#a7adfe] sm:mx-auto">Svgs</NavLink>
                         </div>
                     </div>
 

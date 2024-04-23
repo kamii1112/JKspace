@@ -11,6 +11,7 @@ import Github from "./Components/Github";
 import Creator from "./Components/Creator";
 import { Toaster } from "react-hot-toast";
 import OpenLinks from "./Components/OpenLinks/OpenLinks";
+import Svg from "./Components/Svg";
 
 const App = () => {
 
@@ -25,7 +26,8 @@ const App = () => {
         <Route path="/important-links" element={<ImportantLinks />} />
         <Route path="/github" element={<Github />} />
         <Route path="/creator" element={<Creator />} />
-        <Route path="/open-links" element={<OpenLinks/>}/>
+        <Route path="/open-links" element={<OpenLinks />} />
+        <Route path="/svg-links" element={<Svg/>}/>
 
         <Route path="/notes/html" element={<NotesHtml />} />
       </Routes>
